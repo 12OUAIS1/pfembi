@@ -1,0 +1,29 @@
+.chat-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .chat-btn:focus {
+    outline: none;
+  }
+  
+  .chatbot {
+    position: fixed;
+    top: 30px;
+    right: 35px; /* Adjust the left positioning as needed */
+    z-index: 999; /* Ensure chatbot appears above other content */
+  }
+  

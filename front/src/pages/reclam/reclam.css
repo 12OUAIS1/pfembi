@@ -1,0 +1,21 @@
+.reclamation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reclamation-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    word-wrap: break-word; /* Add this line */
+  }
+  
+  .reclamation-card p {
+    margin: 5px 0;
+  }
+  

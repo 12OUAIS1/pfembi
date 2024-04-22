@@ -1,0 +1,97 @@
+.it{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px
+    ;
+}
+.mobibot {
+    position: fixed;
+    top: 100px; /* Adjust top position as needed */
+    left: 1200px; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+  
+
+.cardsu{
+   
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent; 
+    gap: 25px;
+    align-items: center;
+}
+.cardu {
+    width: 190px;
+    height: 135px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+   
+   .card-detailsu {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-buttonu {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #026553;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    height: 2rem; /* Adjusted height */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+
+.text-bodyu {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-titleu {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   .icou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em; 
+  }
+   /*Hover*/
+   .cardu:hover {
+    border-color: #026553;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    
+   }
+   
+   .cardu:hover .card-buttonu {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+   .cardu:hover .card-detailsu {
+    color: #026553;
+    opacity: 1;
+   }
