@@ -9,13 +9,13 @@ const Homelg = () => {
           <img className="logo1" src="/src/img/20.png" alt="" />
           <div className="containerr">
             <div className="parag">
-              <h2>Ready to start your journey with us!!</h2>
-              <h2>Login and choose the offer that suits you</h2>
-              <p>Please enter your phone number</p>
+             
+              <h2>Connectez-vous et choisissez l'offre qui vous convient</h2>
+              <p>Cliquer sur Connexion pour commencer </p>
             </div>
            <div className="logon">
            <Link to="/login">
-    <button className="logonbtn">Login</button>
+    <button className="logonbtn">Connexion</button>
   </Link>
            </div>
 

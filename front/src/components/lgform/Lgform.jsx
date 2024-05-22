@@ -50,14 +50,15 @@ const Lgform = () => {
   return (
     <div className='lg'>
       <form className="form" onSubmit={handleSubmit}>
-        <p className="title">Sign in</p>
-        <input placeholder="Numero tel" type="text" name="number" className={`email ${submitted && !inputs.number && 'required'}`} onChange={handleChange} value={inputs.number} required />
+        <p className="title">Connexion</p>
         <input placeholder="E-mail" type="text" name="email" className={`email ${submitted && !inputs.email && 'required'}`} onChange={handleChange} value={inputs.email} required />
-        <p className="text">No account? <Link to="/">Create one!</Link></p>
-        <p className="text">Can't access your account?<a>contact-us</a></p>
+        <input placeholder="Motdepass" type="password" name="number" className={`email ${submitted && !inputs.number && 'required'}`} onChange={handleChange} value={inputs.number} required />
+       
+       
+        <p className="text">Vous n'arrivez pas à accéder à votre compte?<a>contactez-nous</a></p>
         <div className="button_row">
-          <Link to="/"> <button className="button secondary_button">Back</button> </Link>
-          <button type="submit" className="button primary_button">Next</button>
+          <Link to="/"> <button className="button secondary_button">Retour</button> </Link>
+          <button type="submit" className="button primary_button">Suivant</button>
         </div>
       </form>
     </div>

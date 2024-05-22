@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+    .carousel-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* PC view */
+  @media (min-width: 577px) {
+    .carousel-image {
+      max-width: 50%;
+      height: auto;
+    }
+  }

@@ -7,7 +7,7 @@ const Sidec = () => {
       <div className="header">
     <IoPersonSharp/><p>Particulier</p>
    </div>
-      <section class="app">
+      <section class="appc">
   <aside class="sidebar">
    
     <nav class="sidebar-nav">

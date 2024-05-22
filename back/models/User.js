@@ -6,7 +6,6 @@ const userSchema = new mongoose.Schema({
         unique: true,
         required: true,
     },
- 
     number: {
         type: Number, // Change the type to String
         unique: true,
@@ -16,6 +15,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+
     offre: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "List",

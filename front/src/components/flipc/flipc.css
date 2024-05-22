@@ -45,7 +45,7 @@
   .valid_thru {
     position: absolute;
     font-weight: bold;
-    top:13.8em;
+    top:12em;
     font-size: 15px;
     left: 20.6em;
   }
@@ -81,8 +81,8 @@
     position: absolute;
     font-weight: bold;
     font-size: 25px;
-    top: 9.2em;
-    left: 12em;
+    top: 8.2em;
+    left: 9.8em;
   }
   
   .name {

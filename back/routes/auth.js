@@ -6,18 +6,19 @@ const bcrypt = require("bcrypt");
 //sign-up
 //sign-up
 router.post("/signup", async (req, res) => {
-    try {
-        const { email,number, numberu } = req.body;
-        const salt = bcrypt.genSaltSync(10);
-        const hashpass = bcrypt.hashSync(numberu, salt);
-         const user = new User({ email, number, numberu:hashpass });
-        const savedUser = await user.save();
-        res.status(200).json({ user: savedUser });
-    } catch (error) {
-        console.error("Error saving user:", error.message); // Log the error message
-        res.status(400).json({ message: "user exist" });
-    }
+  try {
+      const { email,number, numberu } = req.body;
+      const salt = bcrypt.genSaltSync(10);
+      const hashpass = bcrypt.hashSync(numberu, salt);
+       const user = new User({ email, number, numberu:hashpass });
+      const savedUser = await user.save();
+      res.status(200).json({ user: savedUser });
+  } catch (error) {
+      console.error("Error saving user:", error.message); // Log the error message
+      res.status(400).json({ message: "user exist" });
+  }
 });
+
 //login
 router.post("/login", async (req, res) => {
     try {

@@ -36,7 +36,7 @@ const Navbar = () => {
        
     
           <li className='nav-item'>
-<Link className='nav-link active btn-nav' to='/about' aria-current="page"><button className="navbtn">offre</button></Link>
+<Link className='nav-link active btn-nav' to='/offers' aria-current="page"><button className="navbtn">offre</button></Link>
        </li>
        <li className='nav-item'>
        <Link className='nav-link active btn-nav' to='/Espacec' aria-current="page"><button className="navbtn">espace client</button></Link>

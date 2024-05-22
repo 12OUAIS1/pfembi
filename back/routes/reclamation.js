@@ -18,6 +18,37 @@ router.post("/reclamation", async (req, res) => {
         return res.status(500).json({ message: "Internal server error", error: error.message });
     }
 });
+//user update
+router.put("/updaterec/:reclamationId", async (req, res) => {
+    try {
+        const { nomcomplet, numero, issue } = req.body;
+        const reclamationId = req.params.reclamationId;
+
+       
+        const reclamation = await Reclamation.findById(reclamationId);
+
+        // Check if the reclamation exists
+        if (!reclamation) {
+            return res.status(404).json({ message: "Reclamation not found" });
+        }
+
+        // Update the reclamation fields
+        reclamation.nomcomplet = nomcomplet;
+        reclamation.numero = numero;
+        reclamation.issue = issue;
+
+        // Save the updated reclamation
+        const updatedReclamation = await reclamation.save();
+
+        // Send response with the updated reclamation
+        res.status(200).json({ reclamation: updatedReclamation });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+});
+
+//admin update
 router.put("/updaterec/:reclamationId", async (req, res) => {
     try {
         const { state, response } = req.body;

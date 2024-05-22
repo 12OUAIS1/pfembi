@@ -11,8 +11,7 @@ const Espacec = () => {
     <Navbar/>
      <div className='espacec'>
      <div className="est">
-     <h1>vous etes?</h1>
-      <p>plz choose </p>
+   
      </div>
      
     <div className="espcard">

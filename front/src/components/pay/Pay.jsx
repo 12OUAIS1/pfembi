@@ -48,7 +48,7 @@ const Pay = () => {
           <input placeholder="Amount" type="text" name="amount" className="email" onChange={handleChange} value={inputs.amount} />
           {/* Buttons */}
           <div className="button_row">
-            <Link to="/"> <button className="button secondary_button">Back</button> </Link>
+            <Link to="/main"> <button className="button secondary_button">Back</button> </Link>
             <button type="submit" className="button primary_button">Next</button>
           </div>
         </form>

@@ -1,6 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import i1 from "../../img/1.jpg"
+import i2 from "../../img/img1-assets/2.jpg"
+import i3 from "../../img/img1-assets/3.png"
+import i4 from "../../img/img1-assets/4.png"
+import i5 from "../../img/img1-assets/5.png"
+import i6 from "../../img/img1-assets/6.png"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -54,27 +59,23 @@ export default function App() {
       delay={{ show: 250, hide: 400 }}
       overlay={renderTooltip}
     >
-        <img src={i1} />
+        <img src={i2} />
         </OverlayTrigger>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={i1} />
+        <img src={i3} />
         </SwiperSlide>
         <SwiperSlide>
-        <img src={i1} />
+        <img src={i4} />
         </SwiperSlide>
         <SwiperSlide>
-        <img src={i1} />
+        <img src={i5} />
         </SwiperSlide>
         <SwiperSlide>
-        <img src={i1} />
+        <img src={i6} />
         </SwiperSlide>
-        <SwiperSlide>
-        <img src={i1} />
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src={i1} />
-        </SwiperSlide>
+     
+    
       </Swiper>
     </>
   );

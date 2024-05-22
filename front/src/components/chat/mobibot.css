@@ -23,7 +23,7 @@
   .chatbot {
     position: fixed;
     top: 30px;
-    right: 35px; /* Adjust the left positioning as needed */
-    z-index: 999; /* Ensure chatbot appears above other content */
+    right: 35px; 
+    z-index: 999; 
   }
   

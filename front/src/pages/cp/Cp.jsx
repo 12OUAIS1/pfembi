@@ -9,8 +9,9 @@ const Cp = () => {
     <div>
       <Navbar/>
     <div className="ele">
-    <Off/>
+    
       <Sidec/>
+      <Off/>
     </div>
       <Footer/>
     </div>

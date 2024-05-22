@@ -16,8 +16,9 @@ const Reclamation = () => {
       ...prevInputs,
       [name]: value,
     }));
+    console.log('handleChange called');
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Submit button clicked');
@@ -64,12 +65,12 @@ const Reclamation = () => {
   return (
     <div className="bscont">
          <button className="toggle-button button button--primary" onClick={toggleFormVisibility}>
-        {showForm ? 'Hide Form' : 'new reclamation'}
+        {showForm ? 'Hide Form' : 'Reclamer'}
       </button>
       {showForm && (
       <div className="modal">
         <div className="modal__header">
-          <span className="modal__title">New Reclamation</span>
+          <span className="modal__title">Nouvelle Reclamation</span>
           <button className="button button--icon" onClick={toggleFormVisibility}>
                 <svg
                   width="24"
@@ -94,7 +95,7 @@ const Reclamation = () => {
               onChange={handleChange}
               required
             />
-            <p className="input__description">Full Name must contain a maximum of 32 characters</p>
+            <p className="input__description"></p>
           </div>
           <div className="input">
             <label className="input__label">Numero</label>
@@ -106,10 +107,10 @@ const Reclamation = () => {
               onChange={handleChange}
               required
             />
-            <p className="input__description">Numero must contain a maximum of 32 characters</p>
+            <p className="input__description"></p>
           </div>
           <div className="input">
-            <label className="input__label">Issue</label>
+            <label className="input__label">Problème</label>
             <input
               className="input__field input__field--textarea"
               name="issue"
@@ -117,12 +118,12 @@ const Reclamation = () => {
               onChange={handleChange}
               required
             ></input>
-            <p className="input__description">Description of the issue</p>
+            <p className="input__description">Description du Problème</p>
           </div>
         </div>
         <div className="modal__footer">
           <button className="button button--primary" onClick={handleSubmit}>
-            Create Reclamation
+            Créer une Reclamation
           </button>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { SiYoutubegaming } from "react-icons/si";
 import { FaCreditCard } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { SiMusicbrainz } from "react-icons/si";
+import { Link } from 'react-router-dom';
 const Offers = () => {
   return (
     <div className='offers'>
@@ -32,6 +33,7 @@ const Offers = () => {
   </div>
   
 </div>
+<Link to="/anghami">
 <div class="cardof">
   <div class="card-detailsof">
     <div className="icoof"><SiMusicbrainz /></div>
@@ -40,6 +42,7 @@ const Offers = () => {
   </div>
   
 </div>
+</Link>
     </div>
     </div>
   )

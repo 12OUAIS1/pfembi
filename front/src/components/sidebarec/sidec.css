@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
-.app {
+.appc {
     height: calc(100vh - 150px); /* Adjusted height to account for the space occupied by the header */
   }
   
@@ -25,7 +25,7 @@ a:hover {
   transition: all 0.6s ease;
 }
 
-.app {
+.appc {
   height: 50vh;
 }
 
@@ -112,7 +112,7 @@ a:hover {
 /* Nav Flyout */
 .sidebar-nav .nav-flyout {
   position: absolute;
-  background-color: #9b1d2d;
+  background-color: #006426;
   z-index: 9;
   left: 2.5em;
   top: 0;
