@@ -3,9 +3,10 @@
     gap: 25px;
     align-items: center;
     justify-content: center;
-    margin-top: 25px
-    ;
+    margin-top: 25px;
 }
+
+
 .mobibot {
     position: fixed;
     top: 100px; /* Adjust top position as needed */
@@ -14,7 +15,6 @@
     z-index: 1000; /* Ensure it's above other elements */
 }
 
-  
 
 .cardsu{
    

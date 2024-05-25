@@ -21,9 +21,13 @@ import Lgv from './components/lgformveri/Lgv'
 import Mobibot from './components/chat/Mobibot';
 import Reclam from './pages/reclam/Reclam'
 import Anghami from './pages/anghami/Anghami';
-import"./app.css"
+import"./app.css" 
 import Offres from './pages/offres/Offres';
 import Posts from './pages/posts/Posts';
+import FAQ from './pages/faq/Faq';
+import About from './pages/about/About';
+import PrivacyPolicy from './pages/policy/privacy';
+import MobilisSupportsLesVerts from './pages/esp/Esp';
 function App() {
   const dispatch = useDispatch();
   useEffect(()=> {
@@ -48,7 +52,7 @@ function App() {
         <Route path="/Ce" element={<Ce />} />
         <Route path="/espacep" element={<Espacep />} />
         <Route path="/offre" element={<Offres />} />
-        <Route path="/offre/:id" element={<Offre />} />
+       
         <Route path="/pay" element={<Pay />} />
         <Route path="/bot" element={<Mobibot />} />
         <Route path="/off" element={<Offree />} />
@@ -56,6 +60,10 @@ function App() {
         <Route path="/anghami" element={<Anghami/>} />
         <Route path="/offers" element={<Offres />} />
         <Route path="/post" element={<Posts />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/pri" element={<PrivacyPolicy />} />
+        <Route path="/esp" element={<MobilisSupportsLesVerts />} />
     </Routes>
     </BrowserRouter>
   );

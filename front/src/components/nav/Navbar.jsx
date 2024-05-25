@@ -42,13 +42,14 @@ const Navbar = () => {
        <Link className='nav-link active btn-nav' to='/Espacec' aria-current="page"><button className="navbtn">espace client</button></Link>
        </li>
        <li className='nav-item'>
-       <Link className='nav-link active btn-nav' to='/about' aria-current="page"><button className="navbtn">espace press</button></Link>
+       <Link  to="/esp"className='nav-link active btn-nav' aria-current="page"><button className="navbtn">espace press</button></Link>
        </li>
 
        
   {isLoggedIn && (
     <>  <li className='nav-item'>
      <Link className='nav-link active btn-nav' to='/rec' aria-current="page"><button className="navbtn">help</button></Link>
+     
    </li>   
    <li className='nav-item'>
    <Link className='nav-link active btn-nav' to='/' aria-current="page"><button className="navbtn"onClick={logout}><RiLogoutBoxFill/></button></Link>

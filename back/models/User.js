@@ -7,23 +7,20 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     number: {
-        type: Number, // Change the type to String
+        type: String, // Change the type to String
         unique: true,
         required: true,
     },
     numberu: {
-        type: String,
-        required: true,
+        type: Number,
+        
     },
 
     offre: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "List",
     }],
-    carte: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Carte",
-    }],
+ 
     reclamation: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Reclamation",

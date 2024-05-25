@@ -4,6 +4,8 @@ const auth = require("./routes/auth");
 const card = require("./routes/carte");
 const offre = require("./routes/offre");
 const reclamation = require("./routes/reclamation");
+const post = require("./routes/post")
+const comment = require("./routes/comment")
 const cors = require('cors'); 
 
 require("./cnx/cnx");
@@ -17,6 +19,8 @@ app.use("/api/v1", auth);
 app.use("/api/v2",card);
 app.use("/api/v3",offre);
 app.use("/api/v4",reclamation);
+app.use("/api/v5",post);
+app.use("/api/v6",comment);
 app.listen(1000,() => {
   console.log("started");
 }

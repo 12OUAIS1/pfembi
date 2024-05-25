@@ -1,18 +1,26 @@
 const router = require("express").Router();
 const Carte = require("../models/Carte");
 const User = require("../models/User");
-// add crad barid el djazaier mission we did it to ttest the website
+
 router.post("/cards", async (req, res) => {
     try {
-        const { serie, amount, pin, exp, id } = req.body;
-        const existUser = await User.findById(id);
-        if (existUser) {
-            const newCarte = new Carte({ serie, amount, pin, exp, user: existUser._id });
-            await newCarte.save();
-            existUser.carte.push(newCarte._id);
-            await existUser.save();
-            res.status(200).json({ carte: newCarte });
+        const { serie, amount, pin, exp } = req.body;
+        
+        if (!serie || !amount || !pin || !exp) {
+            return res.status(400).json({ message: "All fields are required" });
         }
+
+      
+        const newCarte = new Carte({ serie, amount, pin, exp });
+
+    
+        await newCarte.save();
+
+        existUser.carte.push(newCarte._id);
+
+
+       
+        res.status(200).json({ carte: newCarte });
     } catch (error) {
         console.log(error);
         return res.status(500).json({ message: "Internal server error", error: error.message });

@@ -9,7 +9,8 @@ const Offers = () => {
   return (
     <div className='offers'>
       <div className="cardsof">
-    <div class="cardof">
+  <Link to="/pay">
+  <div class="cardof">
   <div class="card-detailsof">
   <div className="icoof"><FaCreditCard /></div>
     <p class="text-titleof">rechargement en-ligne</p>
@@ -17,6 +18,7 @@ const Offers = () => {
   </div>
   
 </div>
+  </Link>
 <div class="cardof">
   <div class="card-detailsof">
   <div className="icoof"><FaMapLocationDot /></div>

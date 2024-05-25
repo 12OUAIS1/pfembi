@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { TiSocialYoutube } from "react-icons/ti";
 import mobilisLogo from "../../img/mobilis.svg";
 import "./footer.css";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,18 +14,18 @@ const Footer = () => {
           <Col sm={6} md={3} className="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Glossary</a></li>
+              <li><Link to="/about" href="#">About Us</Link></li>
+              <li><Link to="/pri" href="#">Privacy Policy</Link></li>
+              
               <li><a href="#">Payment Options</a></li>
             </ul>
           </Col>
           <Col sm={6} md={3} className="footer-col">
             <h4>Help</h4>
             <ul>
-              <li><a href="#">Chatbot</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Assistance</a></li>
+              
+              <li><Link to="/faq" >FAQ</Link></li>
+              
               <li><a href="#">Contacts</a></li>
             </ul>
           </Col>
@@ -40,12 +41,12 @@ const Footer = () => {
           <Col sm={6} md={3} className="footer-col">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><TiSocialYoutube/></a>
-              <a href="#"><FaInstagram/></a>
+              <a href="https://www.facebook.com/MobilisOfficielle/"><FaFacebookF /></a>
+              <a href="https://x.com/atm_mobilis?lang=en"><FaTwitter /></a>
+              <a href="https://www.youtube.com/@TVMobilis"><TiSocialYoutube/></a>
+              <a href="https://www.instagram.com/mobilis.dz/?hl=en"><FaInstagram/></a>
             </div>
-            <a href="#"><img src={mobilisLogo} alt="Mobilis Logo" /></a>
+            <img src={mobilisLogo} alt="Mobilis Logo" />
           </Col>
         </Row>
       </Container>
